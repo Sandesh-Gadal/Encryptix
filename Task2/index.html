@@ -4,201 +4,220 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha384-4S2S1O/TEXSmcFA2A5bLgy9m3G3f3llEwr3q/AqGLiT/ibfAkfj/Jgy+xW45gsA" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
 
     <header>
-        <div class="header-container" id="Home">
-            <navbar>
-                <img class="logoimg" src="images/image.png" alt="logo">        
-                <nav>
-                    <ul>
-                        <li><a href="#Home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#project">Projects</a></li>
-                        <li><a href="#resume">Resume</a></li>
-                        <li><a href="#contact">Contacts</a></li>
-                    </ul>
-                </nav>
-            </navbar>
+        <div class="header-container">
+            <div><img class="logo" src="images/logo.png" alt="logo"></div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </div>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="files/Resume(sandesh-gadal).pdf" download="Resume(sandesh-gadal).pdf">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    
- 
-    <section class="about">
-        <div class="about-container" id="about">
+
+    <section class="about" id="about">
+        <div class="about-container">
             <div class="hero">
-                <img src="images/sandesh.ppimg.png" alt="hero-image" class="heroimg">
-                <p>Web developer | Tech enthusiat</p>
+                <img src="images/sandesh.ppimg.png" alt="Sandesh Gadal" class="heroimg">
+                <p>Web Developer | Tech Enthusiast</p>
             </div>
-            
             <div class="info">
                 <p class="my-name">I'm <span>S</span>andesh<span> G</span>adal</p>
-                <p class="bio-info">I'm an web enthustiat indulge in the field 
-adipisicing elit. Aperiam quibusdam 
-provident cum cupiditate eaque. </p>
+                <p class="bio-info">I'm a passionate web developer with a keen interest in creating dynamic and responsive web applications. My goal is to deliver user-friendly and efficient digital solutions.</p>
                 <div class="social-icons">
-                    <a href=""><img src="images/facebook.png" alt="facebook"></a>
-                    <a href=""><img src="images/github.png" alt="github"></a>
-                    <a href=""><img src="images/instagram.png" alt="instagram"><a>
-                        <a href=""><img src="images/linkedin.png" alt="linkedin"></a>  
-                    </div>
-                    <div class="resume-container">
-                        <a href="files/Resume(sandesh-gadal).pdf" download="Resume(sandesh-gadal).pdf" class="download-resume">Download Resume</a>
-                    </div>
-          </div>
+                    <a href="https://www.facebook.com/sandesh.gadal.79/"><img src="images/facebook.png" alt="Facebook"></a>
+                    <a href="https://github.com/Sandesh-Gadal"><img src="images/github.png" alt="GitHub"></a>
+                    <a href="https://www.instagram.com/gadal.sandesh/"><img src="images/instagram.png" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/in/sandesh-gadal-743560293/"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                </div>
+                <div class="resume-container">
+                    <a href="files/Resume(sandesh-gadal).pdf" download="Resume(sandesh-gadal).pdf" class="download-resume">Download Resume</a>
+                </div>
+            </div>
         </div>
     </section>
+    
 
-
-    <section class="skills"id="skills" >
-        <h1> About my Skills</h1>
-        <div class="skills-container" >
+    <section class="skills" id="skills">
+        <h1>About My Skills</h1>
+        <div class="skills-container">
             <div class="skills-cards">
                 <div class="skill-card">
-                    <img src="images/coding.png" alt="">
+                    <img src="images/coding.png" alt="Web Development">
                     <h2>Web Development</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur  </p>
+                    <p>Skilled in developing robust web applications using modern technologies and frameworks.</p>
                 </div>
                 <div class="skill-card">
-                    <img src="images/responsive.png" alt="">
-                    <h2>Responsive design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur   </p>
+                    <img src="images/responsive.png" alt="Responsive Design">
+                    <h2>Responsive Design</h2>
+                    <p>Expert in creating mobile-friendly designs that look great on any device.</p>
                 </div>
                 <div class="skill-card">
-                    <img src="images/graphic-designer.png" alt="">
-                    <h2>Graphics Designing</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur  </p>
+                    <img src="images/graphic-designer.png" alt="Graphic Design">
+                    <h2>Graphic Design</h2>
+                    <p>Proficient in designing visually appealing graphics and layouts for various digital platforms.</p>
                 </div>
             </div>
-            <h1>Languages and tools</h1>
-                <div class="skills-language">
-                   <div class="skillset">
-                       <img src="https://skillicons.dev/icons?i=html" />
-                       <div class="bar"> 
-                           <div class="skill html"></div> 
-                        </div> 
-                    </div>
-
-                   <div class="skillset">
-                       <img src="https://skillicons.dev/icons?i=css" />
-                       <div class="bar"> 
-                           <div class="skill css"></div> 
-                        </div> 
-                    </div>
-                
+            <h1>Languages and Tools</h1>
+            <div class="skills-language">
                 <div class="skillset">
-        <img src="https://skillicons.dev/icons?i=js" />
-        <div class="bar">
-            <div class="skill js"></div>
-        </div>
-    </div>
-
-    <div class="skillset">
-        <img src="https://skillicons.dev/icons?i=c" />
-        <div class="bar">
-            <div class="skill c"></div>
-        </div>
-    </div>
-
-    <div class="skillset">
-        <img src="https://skillicons.dev/icons?i=php" />
-        <div class="bar">
-            <div class="skill php"></div>
-        </div>
-    </div>
-
-    <div class="skillset">
-        <img src="https://skillicons.dev/icons?i=dotnet" />
-        <div class="bar">
-            <div class="skill dotnet"></div>
-        </div>
-    </div>
-
-    <div class="skillset">
-        <img src="https://skillicons.dev/icons?i=git" />
-        <div class="bar">
-            <div class="skill git"></div>
-        </div>
-    </div>
-
-    <div class="skillset">
-        <img src="https://skillicons.dev/icons?i=react" />
-        <div class="bar">
-            <div class="skill react"></div>
-        </div>
-    </div>
-
-    <div class="skillset">
-        <img src="https://skillicons.dev/icons?i=bootstrap" />
-        <div class="bar">
-            <div class="skill bootstrap"></div>
-        </div>
-            </div>    
+                    <img src="https://skillicons.dev/icons?i=html" />
+                    <div class="bar">
+                        <div class="skill html"></div>
+                    </div>
+                </div>
+                <div class="skillset">
+                    <img src="https://skillicons.dev/icons?i=css" />
+                    <div class="bar">
+                        <div class="skill css"></div>
+                    </div>
+                </div>
+                <div class="skillset">
+                    <img src="https://skillicons.dev/icons?i=js" />
+                    <div class="bar">
+                        <div class="skill js"></div>
+                    </div>
+                </div>
+                <div class="skillset">
+                    <img src="https://skillicons.dev/icons?i=c" />
+                    <div class="bar">
+                        <div class="skill c"></div>
+                    </div>
+                </div>
+                <div class="skillset">
+                    <img src="https://skillicons.dev/icons?i=php" />
+                    <div class="bar">
+                        <div class="skill php"></div>
+                    </div>
+                </div>
+                <div class="skillset">
+                    <img src="https://skillicons.dev/icons?i=dotnet" />
+                    <div class="bar">
+                        <div class="skill dotnet"></div>
+                    </div>
+                </div>
+                <div class="skillset">
+                    <img src="https://skillicons.dev/icons?i=git" />
+                    <div class="bar">
+                        <div class="skill git"></div>
+                    </div>
+                </div>
+                <div class="skillset">
+                    <img src="https://skillicons.dev/icons?i=react" />
+                    <div class="bar">
+                        <div class="skill react"></div>
+                    </div>
+                </div>
+                <div class="skillset">
+                    <img src="https://skillicons.dev/icons?i=bootstrap" />
+                    <div class="bar">
+                        <div class="skill bootstrap"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-  
-    <section class="projects" id="project">
+    <section class="projects" id="projects">
         <h1>My Projects</h1>
         <div class="projects-container">
-                    <div class="project">
-                        <img class="project-image" src="images/Spacearena.png" alt="">
-                        <h4>Spacearena</h4>
-                        <p>A website of SpaceArena</p>
-                        <button>
-                            <span>See more&nbsp;</span>
-                        </button>
-                    </div> 
-                    <div class="project">
-                        <img class="project-image" src="images/animepool.png" alt="">
-                        <h4>Animepool</h4>
-                        <p>A website of SpaceArena</p>
-                        <button>
-                            <span>See more&nbsp;</span>
-                        </button>
-                    </div> 
-                    <div class="project">
-                        <img class="project-image" src="images/BMS.png" alt="">
-                        <h4>BlogMs</h4>
-                        <p>A website of SpaceArena</p>
-                        <button>
-                            <span>See more&nbsp;</span>
-                        </button>
-                    </div> 
-                    <div class="project">
-                        <img class="project-image" src="images/StockMS.png" alt="">
-                        <h4>Stock-MS</h4>
-                        <p>A website of SpaceArena</p>
-                        <button>
-                            <span>See more&nbsp;</span>
-                        </button>
-                    </div> 
-                    <div class="project">
-                        <img class="project-image" src="images/TravelBuddy.png" alt="">
-                        <h4>TravelBuddy</h4>
-                        <p>A website of SpaceArena</p>
-                        <button>
-                            <span>See more&nbsp;</span>
-                        </button>
-                    </div> 
-                </div>   
-    </section
+            <div class="project">
+                <img class="project-image" src="images/Spacearena.png" alt="Spacearena">
+                <h4>Spacearena</h4>
+                <p>A comprehensive website for space enthusiasts to explore the universe.</p>
+                <button>
+                    <span>See more&nbsp;</span>
+                </button>
+            </div> 
+            <div class="project">
+                <img class="project-image" src="images/animepool.png" alt="Animepool">
+                <h4>Animepool</h4>
+                <p>A dedicated platform for anime fans to discover and share content.</p>
+                <button>
+                    <span>See more&nbsp;</span>
+                </button>
+            </div> 
+            <div class="project">
+                <img class="project-image" src="images/BMS.png" alt="BlogMs">
+                <h4>BlogMs</h4>
+                <p>A dynamic blogging platform for sharing and reading interesting articles.</p>
+                <button>
+                    <span>See more&nbsp;</span>
+                </button>
+            </div> 
+            <div class="project">
+                <img class="project-image" src="images/StockMS.png" alt="Stock-MS">
+                <h4>Stock-MS</h4>
+                <p>An efficient stock management system for businesses of all sizes.</p>
+                <button>
+                    <span>See more&nbsp;</span>
+                </button>
+            </div> 
+            <div class="project">
+                <img class="project-image" src="images/TravelBuddy.png" alt="TravelBuddy">
+                <h4>TravelBuddy</h4>
+                <p>A travel companion app to help you plan and enjoy your trips.</p>
+                <button>
+                    <span>See more&nbsp;</span>
+                </button>
+            </div> 
+        </div>   
+    </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <h1>Get in Touch</h1>
-        <div class="contact-container">  
-             
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.9071753123967!2d84.42043489999999!3d27.689263699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3994fb887e42929b%3A0xd7e5e246d34571f4!2sStudy%20Point%20Tution%20Center!5e0!3m2!1sen!2snp!4v1706366359079!5m2!1sen!2snp"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                </div>
+                <div class="contact-details">
+                    <p><i class="fa-solid fa-phone"></i>&ensp;&ensp;&ensp;+977-9812274117</p>
+                    <p><i class="fa fa-envelope" aria-hidden="true"></i>&ensp;&ensp;&ensp;gadalsandesh123@gmail.com</p>
+                    <p><i class="fa-solid fa-location-dot"></i>&ensp;&ensp;&ensp;Chitwan, Nepal</p>
+                </div>
+            </div>
+            <div class="contact-form-container">
+                <p>Contact Me</p>
+                <form action="gadalsandesh123@gmail.com" class="contact-form" method="post" enctype="text/plain">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" cols="45" required></textarea>
+    
+                    <button type="submit">Send</button>
+                </form>
+            </div>
         </div>
     </section>
 
-
     <footer>
-      
+        <div class="footer-container">
+            <p>&copy; 2024 Sandesh Gadal. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
